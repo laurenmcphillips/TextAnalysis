@@ -111,7 +111,7 @@ freq[tail(ord)]
 #     The number of documents chosen should depend on how many docs you have total a good rule of them
 #     that a word must occur in 10% of docs or more but not show up in more than 90% of all docs
 #   Indicate what your minimum and maximum cut-offs are for how many documents the word appears in
-    MinDoc=5
+    MinDoc=3
     MaxDoc=45
 #   Create a new document matrix that filters the text
 dtmr <-DocumentTermMatrix(docs, control=list(wordLengths=c(4, 20), bounds = list(global = c(MinDoc,MaxDoc))))
