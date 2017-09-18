@@ -11,10 +11,12 @@
 #     Note: currently this pre-processing approach only works on Mac or UNIX machines.
 #         There are some online tools available for Windows that allow you to perform this
 #         initial step of extracting text from .pdf files.
-# Step 1: Open up a command window. 
-# Step 2: navigate to your folder containing the .pdf files using the 'cd' command
+# Step 1: Install pdftotext if you don't already have it.
+#       Instructions here: http://macappstore.org/pdftotext/
+# Step 2: Open up a command window. 
+# Step 3: navigate to your folder containing the .pdf files using the 'cd' command
 #       e.g., cd /Users/lauren/Dropbox/Research/ASU/ExtremeEventAnalysis/Papers
-# Step 3:enter the following lines into the command window which will convert the .pdf files to text
+# Step 4:enter the following lines into the command window which will convert the .pdf files to text
 #       find . -name '*.pdf' -print0 | xargs -0 -n1 pdftotext
 
 # FORMATTING AND ANALYSIS OF TEXT
